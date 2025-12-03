@@ -15,7 +15,7 @@ header {
   position: relative !important;
 }
 
-/* LOGO - Flotar a la izquierda */
+/* LOGO - Flotar a la izquierda, 50% más grande */
 header h1 {
   margin: 0 !important;
   padding: 0 !important;
@@ -25,14 +25,17 @@ header h1 {
 }
 
 header h1 img {
-  max-width: 300px !important;
+  max-width: 450px !important;
   height: auto !important;
+  transform: scale(1.5) !important;
+  transform-origin: left center !important;
 }
 
-/* NAVEGACIÓN - Flotar a la derecha del logo */
+/* NAVEGACIÓN - Flotar a la derecha del logo, encima de la búsqueda */
 nav {
   float: right !important;
-  margin: 10px 0 0 0 !important;
+  clear: none !important;
+  margin: 25px 0 0 0 !important;
   padding: 0 !important;
   background: transparent !important;
   background-color: transparent !important;
@@ -77,8 +80,8 @@ ul.menu li {
 
 ul.menu li a {
   color: #2563eb !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
   padding: 10px 0 !important;
   background: transparent !important;
   background-color: transparent !important;
@@ -137,12 +140,13 @@ ul.menu li.home-page span::before {
 .form-search {
   float: right !important;
   clear: right !important;
-  margin: 15px 0 0 0 !important;
+  margin: 80px 0 20px 0 !important;
   border: 2px solid #e5e7eb !important;
   background: #ffffff !important;
   border-radius: 25px !important;
   padding: 5px 10px !important;
   transition: all 0.3s ease !important;
+  position: relative !important;
 }
 
 .form-search:focus-within {
