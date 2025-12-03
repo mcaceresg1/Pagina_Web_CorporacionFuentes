@@ -194,6 +194,24 @@ h2.top-1 {
   align-self: flex-start !important;
 }
 
+/* Block-3 (página Nosotros) - 3 columnas full width */
+.block-3 {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 2% !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.block-3 > div {
+  width: 32% !important;
+  float: none !important;
+  margin-right: 0 !important;
+  flex-shrink: 0 !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
 /* Ajuste para responsive en tablets */
 @media screen and (max-width: 1024px) {
   .block-1 {
@@ -207,6 +225,19 @@ h2.top-1 {
   
   .block-1 > div:nth-child(3) {
     width: 100%;
+  }
+  
+  .block-3 {
+    flex-wrap: wrap !important;
+  }
+  
+  .block-3 > div {
+    width: 48% !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .block-3 > div:nth-child(3) {
+    width: 100% !important;
   }
 }
 
