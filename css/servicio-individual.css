@@ -1,21 +1,30 @@
 /**
- * ESTILOS PARA PÁGINAS INDIVIDUALES DE SERVICIOS
- * Diseño moderno y consistente
+ * DISEÑO PARA PÁGINAS DE SERVICIO INDIVIDUAL
+ * Aplicar el mismo estilo moderno de servicios.html
  */
 
-/* Hero section del servicio */
-.servicio-hero {
+/* Ocultar sidebar de servicios antiguo */
+.block-5,
+.block-6,
+.block-7 {
+  display: none !important;
+}
+
+/* Container principal del servicio */
+.servicio-individual-container {
   width: 1400px !important;
   max-width: 98% !important;
   margin: 40px auto !important;
-  padding: 60px 40px !important;
-  background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%) !important;
-  border-radius: 15px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  padding: 0 20px !important;
 }
 
-/* Título principal del servicio */
-.servicio-titulo {
+/* Header del servicio */
+.servicio-individual-header {
+  text-align: center !important;
+  margin-bottom: 60px !important;
+}
+
+.servicio-individual-header h2 {
   font-size: 42px !important;
   font-weight: 700 !important;
   color: #1f2937 !important;
@@ -26,115 +35,144 @@
   background-clip: text !important;
 }
 
-/* Descripción principal */
-.servicio-descripcion {
+.servicio-individual-header p {
   font-size: 18px !important;
+  color: #6b7280 !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  line-height: 1.6 !important;
+}
+
+/* Contenido del servicio - 2 columnas */
+.servicio-content {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 60px !important;
+  margin-bottom: 60px !important;
+  align-items: start !important;
+}
+
+.servicio-image {
+  position: sticky !important;
+  top: 20px !important;
+}
+
+.servicio-image img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 500px !important;
+  object-fit: cover !important;
+  border-radius: 15px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.servicio-text {
+  padding: 20px 0 !important;
+}
+
+.servicio-text h3 {
+  font-size: 28px !important;
+  color: #1f2937 !important;
+  margin-bottom: 20px !important;
+  font-weight: 600 !important;
+}
+
+.servicio-text p {
+  font-size: 16px !important;
   line-height: 1.8 !important;
   color: #4b5563 !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 20px !important;
 }
 
 /* Lista de características/funciones */
-.servicio-lista {
+.servicio-text ul {
   list-style: none !important;
   padding: 0 !important;
   margin: 30px 0 !important;
 }
 
-.servicio-lista li {
-  padding: 15px 20px 15px 50px !important;
-  margin-bottom: 12px !important;
-  background: white !important;
-  border-left: 4px solid #2563eb !important;
-  border-radius: 8px !important;
+.servicio-text ul li {
+  padding: 12px 0 12px 30px !important;
   position: relative !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  font-size: 16px !important;
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+  border-bottom: 1px solid #e5e7eb !important;
 }
 
-.servicio-lista li::before {
+.servicio-text ul li:last-child {
+  border-bottom: none !important;
+}
+
+.servicio-text ul li::before {
   content: '✓' !important;
   position: absolute !important;
-  left: 20px !important;
+  left: 0 !important;
   color: #10b981 !important;
   font-weight: bold !important;
   font-size: 18px !important;
 }
 
-.servicio-lista li:hover {
-  transform: translateX(10px) !important;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15) !important;
-}
-
-/* Subtítulos dentro del servicio */
-.servicio-subtitulo {
-  font-size: 28px !important;
-  font-weight: 600 !important;
-  color: #1f2937 !important;
-  margin: 40px 0 20px 0 !important;
-  padding-bottom: 10px !important;
-  border-bottom: 3px solid #2563eb !important;
-  display: inline-block !important;
-}
-
-/* Sección de beneficios */
-.beneficios-grid {
+/* Sección de características destacadas */
+.servicio-features {
   display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 25px !important;
-  margin: 30px 0 !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  margin: 60px 0 !important;
 }
 
-.beneficio-item {
-  background: white !important;
-  padding: 25px !important;
-  border-radius: 10px !important;
+.feature-card {
+  background: #f9fafb !important;
+  padding: 30px !important;
+  border-radius: 12px !important;
+  text-align: center !important;
   border: 2px solid #e5e7eb !important;
   transition: all 0.3s ease !important;
 }
 
-.beneficio-item:hover {
+.feature-card:hover {
   border-color: #2563eb !important;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1) !important;
   transform: translateY(-5px) !important;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15) !important;
 }
 
-.beneficio-item h4 {
+.feature-card h4 {
   font-size: 20px !important;
-  color: #2563eb !important;
-  margin-bottom: 10px !important;
+  color: #1f2937 !important;
+  margin-bottom: 15px !important;
+  font-weight: 600 !important;
 }
 
-.beneficio-item p {
+.feature-card p {
   font-size: 15px !important;
   color: #6b7280 !important;
   line-height: 1.6 !important;
   margin: 0 !important;
 }
 
-/* Ocultar sidebar antigua de servicios en páginas individuales */
-.block-5,
-.block-6:not(.clientes-hero .block-6),
-.block-7 {
-  display: none !important;
-}
-
 /* Responsive */
-@media screen and (max-width: 768px) {
-  .servicio-hero {
-    padding: 40px 25px !important;
+@media screen and (max-width: 1024px) {
+  .servicio-content {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
   }
   
-  .servicio-titulo {
-    font-size: 32px !important;
+  .servicio-image {
+    position: relative !important;
   }
   
-  .servicio-descripcion {
-    font-size: 16px !important;
-  }
-  
-  .beneficios-grid {
+  .servicio-features {
     grid-template-columns: 1fr !important;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .servicio-individual-header h2 {
+    font-size: 32px !important;
+  }
+  
+  .servicio-features {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
