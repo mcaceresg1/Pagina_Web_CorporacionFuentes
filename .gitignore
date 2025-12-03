@@ -1,0 +1,47 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales
+*.bak
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+php_errorlog
+
+# Directorios de Node.js (si usas herramientas de desarrollo)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de caché
+.cache/
+*.cache
+
+# Archivos de compilación
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos específicos del proyecto que no deben subirse
+php_errorlog
+validar.php.bak
+
+# Archivos de respaldo
+*.backup
+
