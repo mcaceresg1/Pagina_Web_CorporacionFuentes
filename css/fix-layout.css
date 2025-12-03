@@ -21,20 +21,23 @@ body {
 
 /* Asegurar que el header esté centrado */
 header {
-  width: 960px;
+  width: 1250px;
+  max-width: 95%;
   margin: 0 auto;
   position: relative;
 }
 
 /* Centrar el contenido principal */
 .container_12 {
-  width: 960px;
+  width: 1250px;
+  max-width: 95%;
   margin: 0 auto;
 }
 
 /* Asegurar que todo el contenido esté centrado */
 #content {
-  width: 960px;
+  width: 1250px;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -54,8 +57,19 @@ header {
   header,
   .container_12,
   #content {
-    width: 960px;
+    width: 1250px;
+    max-width: 95%;
     margin: 0 auto;
+  }
+}
+
+/* Ajustar para pantallas medianas */
+@media screen and (max-width: 1300px) {
+  header,
+  .container_12,
+  #content {
+    width: 95%;
+    max-width: 1250px;
   }
 }
 
@@ -66,7 +80,8 @@ header {
 
 /* Asegurar que los grids estén bien alineados */
 .grid_12 {
-  width: 940px;
+  width: 98%;
+  max-width: 1230px;
   margin: 0 10px;
 }
 
@@ -75,7 +90,19 @@ header {
 .block-2, 
 .block-3 {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1250px;
+  width: 100%;
+}
+
+/* Ajustar elementos dentro de bloques */
+.block-1 > div {
+  width: 30%;
+  margin-right: 3.33%;
+}
+
+.block-1 > div:last-child,
+.block-1 > div.last {
+  margin-right: 0;
 }
 
 /* Limpiar cualquier fondo heredado */
