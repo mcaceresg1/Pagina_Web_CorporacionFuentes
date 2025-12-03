@@ -1,0 +1,142 @@
+/**
+ * ESTILOS PÁGINA CLIENTES
+ * Diseño moderno para la sección de clientes
+ */
+
+/* Hero section de clientes */
+.clientes-hero {
+  width: 100% !important;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%) !important;
+  padding: 60px 0 !important;
+}
+
+/* Grid de intro (texto + imagen) */
+.clientes-intro {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 60px !important;
+  align-items: center !important;
+  margin-bottom: 60px !important;
+}
+
+/* Responsive para intro */
+@media screen and (max-width: 768px) {
+  .clientes-intro {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+}
+
+/* Grid de clientes */
+.clientes-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  margin: 0 auto 60px auto !important;
+  max-width: 1200px !important;
+}
+
+/* Tarjeta de cliente */
+.cliente-card {
+  background: white !important;
+  padding: 30px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid #e5e7eb !important;
+  cursor: pointer !important;
+}
+
+.cliente-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.2) !important;
+  border-color: #2563eb !important;
+}
+
+/* Contenedor del logo (placeholder) */
+.cliente-card .logo-container {
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 15px !important;
+  background: #f9fafb !important;
+  border-radius: 8px !important;
+  padding: 15px !important;
+}
+
+/* Nombre del cliente */
+.cliente-card h4 {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* Sector */
+.cliente-card p {
+  font-size: 14px !important;
+  color: #6b7280 !important;
+  margin: 0 !important;
+}
+
+/* Responsive - 2 columnas en tablets */
+@media screen and (max-width: 1024px) {
+  .clientes-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 25px !important;
+  }
+}
+
+/* Responsive - 1 columna en móviles */
+@media screen and (max-width: 768px) {
+  .clientes-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
+
+/* Sección adicional para mostrar más clientes */
+.mas-clientes {
+  text-align: center !important;
+  margin: 40px 0 !important;
+}
+
+.mas-clientes h4 {
+  font-size: 24px !important;
+  color: #1f2937 !important;
+  margin-bottom: 30px !important;
+}
+
+/* Lista simple de clientes adicionales */
+.clientes-lista {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  columns: 2 !important;
+  column-gap: 40px !important;
+}
+
+.clientes-lista li {
+  font-size: 16px !important;
+  color: #6b7280 !important;
+  margin-bottom: 15px !important;
+  padding-left: 25px !important;
+  position: relative !important;
+}
+
+.clientes-lista li::before {
+  content: '✓' !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #10b981 !important;
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 768px) {
+  .clientes-lista {
+    columns: 1 !important;
+  }
+}
+
