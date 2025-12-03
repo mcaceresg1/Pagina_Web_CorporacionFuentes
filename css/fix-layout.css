@@ -120,18 +120,23 @@ div:not(#footer):not(.lookWrap):not(nav) {
 
 /* Ajustar elementos dentro de bloques */
 .block-1 {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 2%;
-  justify-content: space-between;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 2% !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
 }
 
 .block-1 > div {
-  width: 32%;
-  min-width: 0;
-  flex-shrink: 0;
+  width: 32% !important;
+  min-width: 0 !important;
+  flex-shrink: 0 !important;
   margin-right: 0 !important;
   float: none !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .block-1 > div:last-child,
@@ -148,17 +153,39 @@ article {
   background: transparent !important;
 }
 
-/* Asegurar que las imágenes dentro de las tarjetas sean responsive */
+/* Reducir tamaño de imágenes en tarjetas */
 .block-1 > div img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 100% !important;
+  max-width: 280px !important;
+  height: auto !important;
+  max-height: 180px !important;
+  display: block !important;
+  margin: 0 auto 15px auto !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
 }
 
 /* Asegurar que los párrafos no rompan el layout */
 .block-1 > div p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 15px !important;
+  flex-grow: 1 !important;
+}
+
+/* Títulos de las tarjetas */
+.block-1 > div h3 {
+  font-size: 22px !important;
+  margin-bottom: 15px !important;
+  color: #1f2937 !important;
+}
+
+/* Botones de las tarjetas */
+.block-1 > div a.button {
+  margin-top: auto !important;
+  align-self: flex-start !important;
 }
 
 /* Ajuste para responsive en tablets */
