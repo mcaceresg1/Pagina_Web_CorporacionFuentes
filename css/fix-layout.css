@@ -175,15 +175,15 @@ article {
   flex-grow: 1 !important;
 }
 
-/* Título principal "Le mostraremos el camino al éxito" */
+/* Título principal "Le mostraremos el camino al éxito" - 16px */
 h2.top-1 {
-  font-size: 14px !important;
+  font-size: 16px !important;
   line-height: 1.6 !important;
 }
 
-/* Títulos de las tarjetas */
+/* Títulos de las tarjetas (Nosotros, Servicios, Constituya) - 21px */
 .block-1 > div h3 {
-  font-size: 22px !important;
+  font-size: 21px !important;
   margin-bottom: 15px !important;
   color: #1f2937 !important;
 }
