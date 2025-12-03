@@ -6,36 +6,39 @@
  * - Menú sin fondo, solo letras azules
  */
 
-/* HEADER - Layout horizontal */
+/* HEADER - Layout horizontal con Flexbox */
 header {
   width: 1250px !important;
   max-width: 95% !important;
   margin: 0 auto !important;
-  padding: 20px 0 !important;
+  padding: 30px 0 !important;
   position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
 }
 
-/* LOGO - Flotar a la izquierda, 50% más grande */
+/* LOGO - 50% más grande */
 header h1 {
   margin: 0 !important;
   padding: 0 !important;
-  float: left !important;
+  float: none !important;
   display: inline-block !important;
   width: auto !important;
+  flex-shrink: 0 !important;
 }
 
 header h1 img {
   max-width: 450px !important;
   height: auto !important;
-  transform: scale(1.5) !important;
-  transform-origin: left center !important;
+  display: block !important;
 }
 
-/* NAVEGACIÓN - Flotar a la derecha del logo, encima de la búsqueda */
+/* NAVEGACIÓN - A la derecha en la misma línea */
 nav {
-  float: right !important;
+  float: none !important;
   clear: none !important;
-  margin: 25px 0 0 0 !important;
+  margin: 0 !important;
   padding: 0 !important;
   background: transparent !important;
   background-color: transparent !important;
@@ -45,6 +48,7 @@ nav {
   box-shadow: none !important;
   width: auto !important;
   z-index: 100 !important;
+  flex-shrink: 0 !important;
 }
 
 nav > div {
@@ -55,15 +59,16 @@ nav > div {
   border-radius: 0 !important;
 }
 
-/* MENÚ - Sin fondo, horizontal */
+/* MENÚ - Sin fondo, horizontal, letra grande */
 ul.menu {
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
   display: flex !important;
   align-items: center !important;
-  gap: 2rem !important;
+  gap: 3rem !important;
   float: none !important;
+  list-style: none !important;
 }
 
 ul.menu li {
@@ -136,17 +141,9 @@ ul.menu li.home-page span::before {
   content: '🏠' !important;
 }
 
-/* BUSCADOR - Debajo del menú, a la derecha */
+/* BUSCADOR - OCULTO */
 .form-search {
-  float: right !important;
-  clear: right !important;
-  margin: 80px 0 20px 0 !important;
-  border: 2px solid #e5e7eb !important;
-  background: #ffffff !important;
-  border-radius: 25px !important;
-  padding: 5px 10px !important;
-  transition: all 0.3s ease !important;
-  position: relative !important;
+  display: none !important;
 }
 
 .form-search:focus-within {
