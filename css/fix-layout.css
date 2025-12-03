@@ -95,14 +95,24 @@ header {
 }
 
 /* Ajustar elementos dentro de bloques */
+.block-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2%;
+  justify-content: space-between;
+}
+
 .block-1 > div {
-  width: 30%;
-  margin-right: 3.33%;
+  width: 32%;
+  min-width: 0;
+  flex-shrink: 0;
+  margin-right: 0 !important;
+  float: none !important;
 }
 
 .block-1 > div:last-child,
 .block-1 > div.last {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 /* Limpiar cualquier fondo heredado */
@@ -112,5 +122,46 @@ section {
 
 article {
   background: transparent !important;
+}
+
+/* Asegurar que las imágenes dentro de las tarjetas sean responsive */
+.block-1 > div img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Asegurar que los párrafos no rompan el layout */
+.block-1 > div p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ajuste para responsive en tablets */
+@media screen and (max-width: 1024px) {
+  .block-1 {
+    flex-wrap: wrap;
+  }
+  
+  .block-1 > div {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .block-1 > div:nth-child(3) {
+    width: 100%;
+  }
+}
+
+/* Ajuste para móviles */
+@media screen and (max-width: 768px) {
+  .block-1 {
+    flex-direction: column;
+  }
+  
+  .block-1 > div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
