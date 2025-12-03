@@ -3,20 +3,26 @@
  * Corporación Fuentes y Asociados
  */
 
-/* Quitar fondo negro del body */
+/* Quitar fondo negro del body - MÁXIMA PRIORIDAD */
 body {
   background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
 }
 
-/* Quitar imagen de fondo gris de main */
+/* Quitar imagen de fondo gris de main - MÁXIMA PRIORIDAD */
 .main {
   background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
   border-top: none !important;
 }
 
-/* Cambiar fondo gris a blanco en aside */
+/* Cambiar fondo gris a blanco en aside - MÁXIMA PRIORIDAD */
 .aside {
   background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
 }
 
 /* Asegurar que el header esté centrado */
@@ -76,6 +82,24 @@ header {
 /* Footer también debe estar en fondo blanco si es necesario */
 #footer {
   background: #000000; /* Mantener el footer negro como diseño */
+}
+
+/* Forzar fondo blanco en TODAS las secciones posibles */
+section,
+.section,
+.content,
+#content,
+.wrapper,
+.container,
+.container_12 {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Asegurar que ningún div tenga fondo gris */
+div:not(#footer):not(.lookWrap):not(nav) {
+  background-image: none !important;
 }
 
 /* Asegurar que los grids estén bien alineados */
