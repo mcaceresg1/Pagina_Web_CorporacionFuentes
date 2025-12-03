@@ -175,6 +175,12 @@ article {
   flex-grow: 1 !important;
 }
 
+/* Título principal "Le mostraremos el camino al éxito" */
+h2.top-1 {
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+}
+
 /* Títulos de las tarjetas */
 .block-1 > div h3 {
   font-size: 22px !important;
