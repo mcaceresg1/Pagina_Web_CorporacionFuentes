@@ -5,8 +5,8 @@
 
 /* Slider container - MÁS ANCHO, MENOS ALTO, SIN SOMBRA NI BORDES */
 #slide {
-  width: 1250px !important;
-  max-width: 95% !important;
+  width: 1400px !important;
+  max-width: 98% !important;
   margin: 30px auto !important;
   height: 350px !important;
   overflow: hidden !important;
