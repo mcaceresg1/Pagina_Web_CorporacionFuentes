@@ -3,12 +3,12 @@
  * Hacer el slider más ancho y visible
  */
 
-/* Slider container - MÁS ANCHO */
+/* Slider container - MÁS ANCHO, MENOS ALTO */
 #slide {
   width: 1250px !important;
   max-width: 95% !important;
   margin: 30px auto !important;
-  height: 500px !important;
+  height: 350px !important;
   overflow: hidden !important;
   position: relative !important;
   border-radius: 15px !important;
