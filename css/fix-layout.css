@@ -212,6 +212,26 @@ h2.top-1 {
   box-sizing: border-box !important;
 }
 
+/* Imágenes en block-3 - MISMO TAMAÑO */
+.block-3 > div img {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  margin-bottom: 20px !important;
+}
+
+/* Lista de valores - SIN ESPACIO entre líneas */
+.block-3 ul.list-1 li {
+  margin-bottom: 5px !important;
+  padding: 5px 0 !important;
+  line-height: 1.4 !important;
+}
+
+.block-3 ul.list-1 li a {
+  line-height: 1.4 !important;
+}
+
 /* Ajuste para responsive en tablets */
 @media screen and (max-width: 1024px) {
   .block-1 {
