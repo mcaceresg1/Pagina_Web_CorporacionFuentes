@@ -188,10 +188,10 @@ h2.top-1 {
   color: #1f2937 !important;
 }
 
-/* Botones de las tarjetas */
-.block-1 > div a.button {
-  margin-top: auto !important;
-  align-self: flex-start !important;
+/* Botones de las tarjetas - OCULTOS */
+.block-1 > div a.button,
+.block-3 > div a.button {
+  display: none !important;
 }
 
 /* Block-3 (página Nosotros) - 3 columnas full width */

@@ -1,0 +1,132 @@
+/**
+ * GRID DE SERVICIOS MODERNO
+ * 6 tarjetas con imágenes servicio-1.png a servicio-6.png
+ */
+
+/* Container de servicios */
+.servicios-grid-container {
+  width: 1400px !important;
+  max-width: 98% !important;
+  margin: 40px auto !important;
+  padding: 0 20px !important;
+}
+
+/* Grid de 3 columnas × 2 filas */
+.servicios-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  margin: 40px 0 !important;
+}
+
+/* Cada tarjeta de servicio */
+.servicio-card {
+  background: #ffffff !important;
+  border: 2px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  transition: all 0.3s ease !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.servicio-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+  border-color: #2563eb !important;
+}
+
+/* Imagen del servicio */
+.servicio-card img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  border-radius: 0 !important;
+}
+
+/* Contenido de la tarjeta */
+.servicio-card-content {
+  padding: 25px !important;
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Título del servicio */
+.servicio-card h3 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin: 0 0 15px 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Descripción del servicio */
+.servicio-card p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #6b7280 !important;
+  margin: 0 !important;
+  flex-grow: 1 !important;
+}
+
+/* Icono/Badge opcional */
+.servicio-badge {
+  display: inline-block !important;
+  background: linear-gradient(135deg, #2563eb, #3b82f6) !important;
+  color: white !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Responsive - 2 columnas en tablets */
+@media screen and (max-width: 1024px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 25px !important;
+  }
+}
+
+/* Responsive - 1 columna en móviles */
+@media screen and (max-width: 768px) {
+  .servicios-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .servicio-card img {
+    height: 180px !important;
+  }
+}
+
+/* Título de la sección */
+.servicios-section-title {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin: 60px 0 40px 0 !important;
+  background: linear-gradient(135deg, #2563eb, #0891b2) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Subtítulo opcional */
+.servicios-subtitle {
+  text-align: center !important;
+  font-size: 18px !important;
+  color: #6b7280 !important;
+  margin: -20px 0 40px 0 !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
