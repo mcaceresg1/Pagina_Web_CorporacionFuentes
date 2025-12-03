@@ -119,26 +119,9 @@ ul.menu li.current a {
   color: #1e40af !important;
 }
 
-/* Home icon */
+/* Home icon - OCULTO */
 ul.menu li.home-page {
-  background: transparent !important;
-  border: none !important;
-}
-
-ul.menu li.home-page a {
-  padding: 10px !important;
-}
-
-ul.menu li.home-page span {
-  background-image: none !important;
-  width: 20px !important;
-  height: 20px !important;
-  display: inline-block !important;
-  font-size: 20px !important;
-}
-
-ul.menu li.home-page span::before {
-  content: '🏠' !important;
+  display: none !important;
 }
 
 /* BUSCADOR - OCULTO */
