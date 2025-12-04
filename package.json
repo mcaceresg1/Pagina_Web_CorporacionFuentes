@@ -1,0 +1,29 @@
+{
+  "name": "corporacionfuentes.com",
+  "version": "1.0.0",
+  "description": "Sitio web oficial de **Corporación Fuentes y Asociados**, firma especializada en asesoría contable, tributaria, laboral y auditorías en Lima, Perú.",
+  "main": "index.js",
+  "scripts": {
+    "minify-css": "cleancss -o css/min/style.min.css css/style.css css/fix-layout.css css/modern-improvements.css css/header-redesign.css css/footer-mejorado.css css/whatsapp-button.css css/titulos-color.css",
+    "minify-js": "terser js/modern-enhancements.js -o js/min/modern-enhancements.min.js -c -m && terser js/analytics.js -o js/min/analytics.min.js -c -m",
+    "build": "npm run minify-css && npm run minify-js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcaceresg1/Pagina_Web_CorporacionFuentes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mcaceresg1/Pagina_Web_CorporacionFuentes/issues"
+  },
+  "homepage": "https://github.com/mcaceresg1/Pagina_Web_CorporacionFuentes#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.44.1",
+    "uglify-js": "^3.19.3"
+  }
+}

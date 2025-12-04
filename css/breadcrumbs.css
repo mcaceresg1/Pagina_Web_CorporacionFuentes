@@ -1,0 +1,60 @@
+/**
+ * BREADCRUMBS (Migas de pan)
+ * Navegación jerárquica en las páginas
+ */
+
+.breadcrumbs {
+  background: #f9fafb;
+  padding: 15px 20px;
+  margin: 20px auto;
+  max-width: 1400px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumbs-list li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumbs-list li a {
+  color: #0A3763;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbs-list li a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.breadcrumbs-list li.active {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.breadcrumbs-list li:not(:last-child)::after {
+  content: '›';
+  margin-left: 8px;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    font-size: 13px;
+    padding: 12px 15px;
+  }
+}
+

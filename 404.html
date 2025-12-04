@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - Corporación Fuentes y Asociados</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/modern-improvements.css">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', sans-serif;
+        }
+        
+        .error-container {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 150px;
+            font-weight: 900;
+            color: #0A3763;
+            line-height: 1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #0A3763, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        .error-message {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .error-description {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .error-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #0A3763, #2563eb);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #0A3763;
+            border: 2px solid #0A3763;
+        }
+        
+        .btn-secondary:hover {
+            background: #0A3763;
+            color: white;
+        }
+        
+        .search-box {
+            margin: 30px 0;
+            display: flex;
+            gap: 10px;
+            max-width: 400px;
+            margin: 30px auto;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 50px;
+            font-size: 15px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .illustration {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: fadeIn 0.8s ease-out 0.2s both;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="illustration">🔍</div>
+        <div class="error-code">404</div>
+        <h1 class="error-message">Página no encontrada</h1>
+        <p class="error-description">
+            Lo sentimos, la página que estás buscando no existe o ha sido movida.
+        </p>
+        
+        <div class="error-links">
+            <a href="index.html" class="btn">Ir al Inicio</a>
+            <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
+            <a href="contacto.html" class="btn btn-secondary">Contactar</a>
+        </div>
+        
+        <div style="margin-top: 40px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <h3 style="color: #0A3763; margin-bottom: 15px;">Información de Contacto</h3>
+            <p style="color: #6b7280; font-size: 15px; line-height: 1.8;">
+                📞 <strong>Tel:</strong> 01 252 0652 / 980 602 352<br>
+                📧 <strong>Email:</strong> gerencia@corporacionfuentes.com<br>
+                📱 <strong>WhatsApp:</strong> +51 980 602 352
+            </p>
+        </div>
+    </div>
+</body>
+</html>

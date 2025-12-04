@@ -262,3 +262,4 @@ Los archivos CSS se cargan en este orden de importancia:
 **Documentación creada por:** Asistente IA  
 **Última actualización:** 4 de Diciembre, 2025
 
+

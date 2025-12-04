@@ -369,3 +369,4 @@ Actualizar las 2 páginas pendientes:
 **Última actualización:** 4 de Diciembre, 2025  
 **Versión:** 2.0
 
+

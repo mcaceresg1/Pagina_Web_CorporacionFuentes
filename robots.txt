@@ -22,3 +22,4 @@ Allow: /
 # Tiempo de espera entre peticiones (en segundos)
 Crawl-delay: 1
 
+
