@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fondo blanco completo -->
+  <rect width="32" height="32" fill="#ffffff"/>
+  
+  <!-- 4 cuadrados azules formando el logo -->
+  <g fill="#2563eb">
+    <!-- Cuadrado superior izquierdo -->
+    <rect x="8" y="8" width="7" height="7" rx="1"/>
+    
+    <!-- Cuadrado superior derecho -->
+    <rect x="17" y="8" width="7" height="7" rx="1"/>
+    
+    <!-- Cuadrado inferior izquierdo -->
+    <rect x="8" y="17" width="7" height="7" rx="1"/>
+    
+    <!-- Cuadrado inferior derecho -->
+    <rect x="17" y="17" width="7" height="7" rx="1"/>
+  </g>
+  
+  <!-- Detalle verde pequeño -->
+  <circle cx="10" cy="22" r="1" fill="#10b981"/>
+</svg>

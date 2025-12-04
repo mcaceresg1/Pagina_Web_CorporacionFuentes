@@ -11,6 +11,10 @@
     <meta name="description" content="Servicios profesionales de asesoría contable, tributaria, laboral, auditorías y más. Corporación Fuentes y Asociados.">
     <meta name="keywords" content="servicios contables, asesoría tributaria, auditoría, consultoría empresarial">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -18,6 +22,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/modern-improvements.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/header-redesign.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/servicios-grid.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/whatsapp-button.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer-mejorado.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/titulos-color.css">
 
     <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
 
@@ -59,15 +66,15 @@
 
     <header>
 
-        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <h1><a href="index.html" aria-label="Ir a página principal"><img src="images/logo.png" alt="Corporación Fuentes y Asociados"></a></h1>
 
         <div class="form-search">
 
-            <form id="form-search" method="post">
+            <form id="form-search" method="post" role="search" aria-label="Búsqueda del sitio">
 
-              <input type="text" value="Type here..." onBlur="if(this.value=='') this.value='Type here...'" onFocus="if(this.value =='Type here...' ) this.value=''"  />
+              <input type="text" value="Type here..." onBlur="if(this.value=='') this.value='Type here...'" onFocus="if(this.value =='Type here...' ) this.value=''" aria-label="Buscar en el sitio" />
 
-              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button"></a>
+              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button" aria-label="Buscar"></a>
 
             </form>
 
@@ -407,41 +414,45 @@
 
           <div class="section1">
 
-             <h1><a href="index.html"><img src="images/logo-footer.png" alt="" style="width: 300px;"></a></h1>
+             <h1><a href="index.html"><img src="images/logo-footer.png" alt="Corporación Fuentes y Asociados" style="width: 300px;"></a></h1>
+
+             <p style="color: #fff; margin-top: 15px; line-height: 1.6;">Firma especializada en asesoría contable, tributaria, laboral y auditorías.</p>
 
           </div>
 
-          <div class="section2"><br>
+          <div class="section2">
 
-            <h3 style="color: #fff;">Servicios:</h3>
+            <h3 style="color: #fff;">Contacto:</h3>
 
-            <a style="color: #fff;" href="asesoria_contable.html">Asesoría Contable</a>
+            <p style="color: #fff; margin: 5px 0;"><strong>Dirección:</strong><br>Calle Maximiliano Arguedas Nº 184<br>Chorrillos, Lima - Perú</p>
 
-            <a style="color: #fff;" href="asesoria_contable.html">Asesoría Contable</a>
+            <p style="color: #fff; margin: 5px 0;"><strong>Teléfonos:</strong><br>01 252 0652 / 980 602 352</p>
 
-            <a style="color: #fff;" href="auditoria_contable.html">Auditoría Contable</a>
-
-            <a style="color: #fff;" href="asesoria_tributaria.html">Asesoría Tributaria  </a>
+            <p style="color: #fff; margin: 5px 0;"><strong>Email:</strong><br>gerencia@corporacionfuentes.com</p>
 
           </div>
 
           <div class="section3">
 
-            <h3>Servicios:</h3>
+            <h3 style="color: #fff;">Servicios:</h3>
 
-            <a style="color: #fff;"  href="asesoria_laboral_planillas.html">Asesoría  Laboral y Planillas</a>
+            <a style="color: #fff;" href="asesoria_contable.html">Asesoría Contable</a>
+
+            <a style="color: #fff;" href="auditoria_contable.html">Auditoría Contable</a>
+
+            <a style="color: #fff;" href="asesoria_tributaria.html">Asesoría Tributaria</a>
+
+            <a style="color: #fff;"  href="asesoria_laboral_planillas.html">Asesoría Laboral</a>
 
             <a style="color: #fff;"  href="asesoria_legal.html">Asesoría Legal</a>
 
-            <a  style="color: #fff;" href="implementacion_sistemas_informacion.html">Implementación de Sistemas de Información Contables</a>
-
-            <a style="color: #fff;"  href="outsourcing_profesional.html">Outsourcing Profesional</a>
+            <a style="color: #fff;"  href="outsourcing_profesional.html">Outsourcing</a>
 
           </div>
 
           <div class="section4">
 
-            <h3>Síguenos</h3>
+            <h3 style="color: #fff;">Síguenos</h3>
 
              <div class="social-icons">
 
@@ -451,7 +462,9 @@
 
                     <a href="https://twitter.com/corpfuentes" target="_blank" rel="noopener noreferrer" class="icon-1" aria-label="Twitter"></a>
 
-                </div>      
+                </div>
+
+             <p style="color: #fff; margin-top: 20px; font-size: 12px;">© 2025 Corporación Fuentes y Asociados<br>Todos los derechos reservados</p>
 
           </div>      
 
@@ -460,6 +473,9 @@
       </div>
 
 </div>	 
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/51980602352" target="_blank" rel="noopener noreferrer" class="whatsapp-float whatsapp-icon" aria-label="Contactar por WhatsApp"></a>
 
 </body>
 

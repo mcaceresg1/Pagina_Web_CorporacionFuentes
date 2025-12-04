@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Fondo azul de LinkedIn con esquinas redondeadas -->
+  <rect width="24" height="24" fill="#0A66C2" rx="4"/>
+  
+  <!-- Letra "in" en blanco -->
+  <g fill="white">
+    <!-- Letra "i" -->
+    <!-- Punto de la i -->
+    <circle cx="7.5" cy="7.5" r="1.2"/>
+    <!-- Barra vertical de la i -->
+    <rect x="6.5" y="10" width="2" height="7.5" rx="0.5"/>
+    
+    <!-- Letra "n" -->
+    <path d="M 11 10 L 11 17.5 L 13 17.5 L 13 13.5 C 13 12.3 13.8 11.5 15 11.5 C 16.2 11.5 17 12.3 17 13.5 L 17 17.5 L 19 17.5 L 19 13 C 19 10.8 17.5 9.5 15.5 9.5 C 14.2 9.5 13.3 10.1 12.8 10.8 L 12.8 10 L 11 10 Z"/>
+  </g>
+</svg>

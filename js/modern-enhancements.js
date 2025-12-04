@@ -177,8 +177,7 @@
 
     // Envío del formulario
     form.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      
+      // Validar campos antes de enviar
       let isValid = true;
       inputs.forEach(input => {
         if (!validateField(input)) {
@@ -186,9 +185,21 @@
         }
       });
 
-      if (isValid) {
-        await handleFormSubmit(form);
+      if (!isValid) {
+        e.preventDefault();
+        return;
       }
+
+      // Si usa Formsubmit.co, permitir envío normal (no usar fetch)
+      const isFormsubmit = form.action && form.action.includes('formsubmit.co');
+      if (isFormsubmit) {
+        // Dejar que el formulario se envíe normalmente
+        return;
+      }
+
+      // Para validar.php, usar fetch
+      e.preventDefault();
+      await handleFormSubmit(form);
     });
   }
 
@@ -262,6 +273,17 @@
         body: formData
       });
 
+      // Verificar si la respuesta es válida
+      if (!response.ok) {
+        // Si es 405, el servidor no soporta PHP
+        if (response.status === 405) {
+          showAlert('info', '📧 Para enviar su mensaje, por favor contacte directamente a: gerencia@corporacionfuentes.com o llámenos al 01 252 0652');
+          form.reset();
+          return;
+        }
+        throw new Error(`Error ${response.status}`);
+      }
+
       const result = await response.json();
 
       if (result.success) {
@@ -272,7 +294,9 @@
       }
     } catch (error) {
       console.error('Error:', error);
-      showAlert('error', 'Error al enviar el formulario. Por favor intente nuevamente.');
+      // Mensaje más amigable cuando no hay servidor PHP
+      showAlert('info', '📧 Para contactarnos, envíe un email a: gerencia@corporacionfuentes.com<br>📞 O llámenos al: 01 252 0652 / 980 602 352');
+      form.reset();
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
@@ -282,7 +306,7 @@
   function showAlert(type, message) {
     const alert = document.createElement('div');
     alert.className = `alert alert-${type}`;
-    alert.textContent = message;
+    alert.innerHTML = message;
     alert.style.position = 'fixed';
     alert.style.top = '20px';
     alert.style.right = '20px';

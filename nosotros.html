@@ -11,12 +11,19 @@
     <meta name="description" content="Conozca a Corporación Fuentes y Asociados. Firma con amplia experiencia en asesoría contable, tributaria, laboral y auditorías en Perú.">
     <meta name="keywords" content="corporación fuentes, nosotros, equipo contable, experiencia tributaria">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/fix-layout.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/modern-improvements.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/header-redesign.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/whatsapp-button.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer-mejorado.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/titulos-color.css">
 
     <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
 
@@ -58,15 +65,15 @@
 
     <header>
 
-        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <h1><a href="index.html" aria-label="Ir a página principal"><img src="images/logo.png" alt="Corporación Fuentes y Asociados"></a></h1>
 
         <div class="form-search">
 
-            <form id="form-search" method="post">
+            <form id="form-search" method="post" role="search" aria-label="Búsqueda del sitio">
 
-              <input type="text" value="Type here..." onBlur="if(this.value=='') this.value='Type here...'" onFocus="if(this.value =='Type here...' ) this.value=''"  />
+              <input type="text" value="Type here..." onBlur="if(this.value=='') this.value='Type here...'" onFocus="if(this.value =='Type here...' ) this.value=''" aria-label="Buscar en el sitio" />
 
-              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button"></a>
+              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button" aria-label="Buscar"></a>
 
             </form>
 
@@ -128,15 +135,15 @@
 
                     <h3 class="p5">Nosotros</h3>
 
-                    <img src="images/banner-1.jpg" alt="Equipo Corporación Fuentes y Asociados" class="img-border" loading="lazy">
+                    <img src="images/nosotros1.png" alt="Equipo Corporación Fuentes y Asociados" class="img-border" loading="lazy">
 
                     <p class="top-1"><a href="#" class="link"><strong>La Corporación Contable Fuentes y Asociados  </strong></a></p>
 
                     <p class="p6">Somos una Corporación Contable  de asesoramiento empresarial, una nueva alternativa dinámica, eficiente y veraz para los empresarios más exigentes del mercado actual.</p>
 
-                    <p class="p4">La Corporación Contable Fuentes y Asociados  tiene como lema de acción:
+                    <p class="p4">La Corporación Contable Fuentes y Asociados  tiene como <u>lema de acción:</u>
 
-                     Que si Usted tiene PROBLEMAS nosotros tenemos SOLUCIONES esto hace que en todo momento busquemos un camino seguro y sin obstáculos para encontrar respuesta a cualquier problema tributario o financiero, buscando que Usted tenga un beneficio importante y que la inversión que ha efectuado en su corta o larga vida empresarial .</p>
+                     <b>Que si Usted tiene PROBLEMAS nosotros tenemos SOLUCIONES</b> esto hace que en todo momento busquemos un camino seguro y sin obstáculos para encontrar respuesta a cualquier problema tributario o financiero, buscando que Usted tenga un beneficio importante y que la inversión que ha efectuado en su corta o larga vida empresarial .</p>
 
                     <a href="quienes_somos.html" class="button">Detalles</a>
 
@@ -160,7 +167,7 @@
 
                         <span>Visión</span>
 
-                        <p class="extra-wrap">Ser una Corporación Contable de gran prestigio en el mercado reconocido por su respeto a los compromisos, calidad de servicio asumidos como contador público, su alto grado de profesionalismo, su compromiso ético y su política de mejoramiento continúo en calidad</p>
+                        <p class="extra-wrap">Ser una corporación contable de prestigio, reconocida por el cumplimiento de compromisos, la calidad del servicio, el profesionalismo, la ética y la mejora continua.</p>
 
                     </div>
 
@@ -168,7 +175,7 @@
 
                         <span>Misión</span>
 
-                        <p class="extra-wrap">Profesionales que trabajan en equipo para satisfacer las expectativas de desarrollo estructural-administrativo de nuestros clientes orientado a distintas actividades desarrolladas por empresas unipersonales, sociedades, asociaciones sin fines de lucro, fundaciones, fideicomisos y constructoras. </p>
+                        <p class="extra-wrap">Brindar soluciones contables y administrativas a través de un equipo profesional comprometido con la excelencia, orientado a satisfacer las necesidades de desarrollo estructural y operativo de nuestros clientes: empresas unipersonales, sociedades, asociaciones sin fines de lucro, fundaciones, constructoras, tec. </p>
 
                     </div>
 
@@ -184,33 +191,20 @@
 
                     <img src="images/imagen2.png" alt="Valores corporativos" class="img-border" loading="lazy" style="margin-bottom: 20px;">
 
-                    <ul class="list-1 p4 left-1">
+                    <ul class="list-1 left-1">
 
-                    	<li><a href="#">Creemos en el trabajo en equipo y en el respeto por el individuo</a></li>
-
-                        <li><a href="#">Creemos en una organización flexible</a></li>
-
-                        <li><a href="#">Creemos en la atención personalizada</a></li>
-
-                        <li><a href="#">Buscamos permanentemente superar la actuación del contador público.</a></li>
-
-                        <li><a href="#">Buscamos mantener relaciones de largo plazo entre contador público y cliente</a></li>
-
-                        <li><a href="#">Buscamos obrar con transparencia y rectitud.</a></li>
-
-                        <li><a href="#">Buscamos permanentemente las mejores soluciones administrativas</a></li>
-
-                        <li><a href="#">Trabajamos con vocación de servicio cumpliendo los requisitos de nuestros clientes.</a></li>
-
-                        <li><a href="#">Trabajamos con sentido de pertenencia.</a></li>
-
-                        <li><a href="#">Promovemos una relación de bienestar en el tiempo, con nuestros empleados y toda nuestra cadena de valores, con futuro y proyección</a></li>
-
-                        
+                    	  <li>Trabajo en equipo y respeto por las personas.</a></li>
+                        <li>Transparencia, rectitud y ética profesional.</a></li>
+                         <li>Ofrecer permanentemente las mejores soluciones administrativas</a></li>
+                        <li>Vocación de servicio y cumplimiento de los requisitos del cliente.</a></li>
+                        <li>Sentido de pertenencia y compromiso interno.</a></li>
+                        <li>Atención personalizada y enfoque en relaciones de largo plazo.</a></li>
+                        <li>Flexibilidad organizacional para adaptarse a las necesidades del cliente.</a></li>
+                        <li>Buscamos mantener relaciones de largo plazo entre contador público y cliente</a></li>
+                        <li>Bienestar sostenido para empleados y toda la cadena de valor, con visión de futuro./a></li>
 
                     </ul>
-
-                    
+                  
 
                 </div>
 
@@ -244,51 +238,57 @@
 
           <div class="section1">
 
-             <h1><a href="index.html"><img src="images/logo-footer.png" alt="" style="width: 300px;"></a></h1>
+             <h1><a href="index.html"><img src="images/logo-footer.png" alt="Corporación Fuentes y Asociados" style="width: 300px;"></a></h1>
+
+             <p style="color: #fff; margin-top: 15px; line-height: 1.6;">Firma especializada en asesoría contable, tributaria, laboral y auditorías.</p>
 
           </div>
 
-          <div class="section2"><br>
+          <div class="section2">
 
-            <h3 style="color: #fff;">Servicios:</h3>
+            <h3 style="color: #fff;">Contacto:</h3>
 
-            <a style="color: #fff;" href="asesoria_contable.html">Asesoría Contable</a>
+            <p style="color: #fff; margin: 5px 0;"><strong>Dirección:</strong><br>Calle Maximiliano Arguedas Nº 184<br>Chorrillos, Lima - Perú</p>
 
-            <a style="color: #fff;" href="asesoria_contable.html">Asesoría Contable</a>
+            <p style="color: #fff; margin: 5px 0;"><strong>Teléfonos:</strong><br>01 252 0652 / 980 602 352</p>
 
-            <a style="color: #fff;" href="auditoria_contable.html">Auditoría Contable</a>
-
-            <a style="color: #fff;" href="asesoria_tributaria.html">Asesoría Tributaria  </a>
+            <p style="color: #fff; margin: 5px 0;"><strong>Email:</strong><br>gerencia@corporacionfuentes.com</p>
 
           </div>
 
           <div class="section3">
 
-            <h3>Servicios:</h3>
+            <h3 style="color: #fff;">Servicios:</h3>
 
-            <a style="color: #fff;"  href="asesoria_laboral_planillas.html">Asesoría  Laboral y Planillas</a>
+            <a style="color: #fff;" href="asesoria_contable.html">Asesoría Contable</a>
+
+            <a style="color: #fff;" href="auditoria_contable.html">Auditoría Contable</a>
+
+            <a style="color: #fff;" href="asesoria_tributaria.html">Asesoría Tributaria</a>
+
+            <a style="color: #fff;"  href="asesoria_laboral_planillas.html">Asesoría Laboral</a>
 
             <a style="color: #fff;"  href="asesoria_legal.html">Asesoría Legal</a>
 
-            <a  style="color: #fff;" href="implementacion_sistemas_informacion.html">Implementación de Sistemas de Información Contables</a>
-
-            <a style="color: #fff;"  href="outsourcing_profesional.html">Outsourcing Profesional</a>
+            <a style="color: #fff;"  href="outsourcing_profesional.html">Outsourcing</a>
 
           </div>
 
           <div class="section4">
 
-            <h3>Siguenos</h3>
+            <h3 style="color: #fff;">Síguenos</h3>
 
              <div class="social-icons">
 
-                    <a href="#" class="icon-3"></a>
+                    <a href="https://www.facebook.com/corporacion.fuentes.asociados/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="icon-3" aria-label="Facebook"></a>
 
-                    <a href="#" class="icon-2"></a>
+                    <a href="https://www.linkedin.com/company/corporacionfuentes" target="_blank" rel="noopener noreferrer" class="icon-2" aria-label="LinkedIn"></a>
 
-                    <a href="#" class="icon-1"></a>
+                    <a href="https://twitter.com/corpfuentes" target="_blank" rel="noopener noreferrer" class="icon-1" aria-label="Twitter"></a>
 
-                </div>      
+                </div>
+
+             <p style="color: #fff; margin-top: 20px; font-size: 12px;">© 2025 Corporación Fuentes y Asociados<br>Todos los derechos reservados</p>
 
           </div>      
 
@@ -297,6 +297,9 @@
       </div>
 
 </div>	  
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/51980602352" target="_blank" rel="noopener noreferrer" class="whatsapp-float whatsapp-icon" aria-label="Contactar por WhatsApp"></a>
 
 </body>
 

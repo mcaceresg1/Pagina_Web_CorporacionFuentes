@@ -11,7 +11,7 @@ header('X-Frame-Options: DENY');
 header('X-XSS-Protection: 1; mode=block');
 
 // Configuración de correo
-define('EMAIL_TO', 'contacto@corporacionfuentes.com'); // Cambiar por el email real
+define('EMAIL_TO', 'gerencia@corporacionfuentes.com'); // Email de gerencia
 define('EMAIL_FROM', 'noreply@corporacionfuentes.com');
 define('EMAIL_SUBJECT', 'Nuevo mensaje desde el formulario de contacto');
 define('SITE_NAME', 'Corporación Fuentes y Asociados');
@@ -280,9 +280,9 @@ function sendConfirmationEmail($email, $nombre) {
             </p>
             <p>Si necesitas asistencia inmediata, puedes contactarnos:</p>
             <p>
-                📞 <strong>Teléfono:</strong> 2520652 / 7246236<br>
-                📱 <strong>Móvil:</strong> 947451444 / 980602352<br>
-                📧 <strong>Email:</strong> contacto@corporacionfuentes.com
+                📞 <strong>Teléfono:</strong> 01 252 0652<br>
+                📱 <strong>Móvil:</strong> 980 602 352<br>
+                📧 <strong>Email:</strong> gerencia@corporacionfuentes.com
             </p>
         </div>
         <div class="footer">

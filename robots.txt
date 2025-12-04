@@ -1,0 +1,24 @@
+# robots.txt para Corporación Fuentes y Asociados
+# Permite la indexación completa del sitio por motores de búsqueda
+
+User-agent: *
+Allow: /
+
+# Bloquear acceso a directorios internos y archivos de configuración
+Disallow: /css/
+Disallow: /js/
+Disallow: /*.md$
+
+# Sitemap
+Sitemap: https://www.corporacionfuentes.com/sitemap.xml
+
+# Rastreadores específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Tiempo de espera entre peticiones (en segundos)
+Crawl-delay: 1
+

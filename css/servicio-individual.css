@@ -4,11 +4,13 @@
  */
 
 /* Ocultar sidebar de servicios antiguo */
+/* COMENTADO PARA PERMITIR VER EL CONTENIDO
 .block-5,
 .block-6,
 .block-7 {
   display: none !important;
 }
+*/
 
 /* Container principal del servicio */
 .servicio-individual-container {
