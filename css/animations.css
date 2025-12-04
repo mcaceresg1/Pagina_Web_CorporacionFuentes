@@ -72,12 +72,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Entrada suave de tarjetas */
+/* Entrada suave de tarjetas - NO aplicar al slider */
 .servicio-card,
-.block-1 > div,
-.block-3 > div {
+.block-1 > div:not(.slider),
+.block-3 > div:not(.slider) {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Asegurar que el slider funcione */
+.slider,
+.slider .items,
+.slider .items li {
+  animation: none !important;
 }
 
 .servicio-card:nth-child(1) { animation-delay: 0.1s; }
